@@ -1,23 +1,9 @@
-<?php 
-$skippedElements = array('.','..','index.php');
-$list = "<ul>";
-
-$dir = scandir(".");
-foreach ($dir as $element) {
-	if (in_array($element, $skippedElements)) continue;
-
-	$list .= "<li><a href='./".$element."'>".$element."</a></li>";
-}
-$list .= "<ul>";
-
-?>
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Héctor Martín Solís</title>
+	<link rel="icon" href="./img/icon.ico" type="image/x-icon" />
+
 
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -85,6 +71,7 @@ $list .= "<ul>";
 			position: relative;
 			-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 			box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+			background: #f9f9f9;
 		}
 
 		.timeline > li > .timeline-panel:before {
@@ -217,12 +204,38 @@ $list .= "<ul>";
 				right: auto;
 			}
 		}
+
+		/** ------------------ */
+		#goTopButton {
+		  display: none;
+		  position: fixed;
+		  bottom: 20px;
+		  right: 30px;
+		  z-index: 99;
+		}
+
 	</style>
 
 	<script type="text/javascript">
-			function animateToID(theID) {
+		function animateToID(theID) {
+			$('html, body').animate({
+			    scrollTop: $("#"+theID).offset().top
+			}, 1000);
+		}
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+			    	$("#goTopButton").fadeIn(500);
+			    else
+			    	$("#goTopButton").fadeOut(500);
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function goTopAction() {
 				$('html, body').animate({
-				    scrollTop: $("#"+theID).offset().top
+				    scrollTop: $("body").offset().top
 				}, 1000);
 			}
 	</script>
@@ -234,7 +247,7 @@ $list .= "<ul>";
 		<div class="container">
 
 			<a class="navbar-brand" href="#">
-				<img src="./img/icon_svg.svg" width="50" height="50" alt="H.M.S">
+				<img src="./img/icon.svg" width="50" height="50" alt="H.M.S">
 			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -265,44 +278,31 @@ $list .= "<ul>";
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container-fluid text-white" style="background: #1D4E69;">
+		<div class="container pt-5 pb-5" id="sobre_mi">
+			<h2 class="pb-5"><center>Sobre mi</center></h2>
 
-		<div class="container mt-5 mb-5" id="sobre_mi">
-			<h2><center>Sobre mi</center></h2>
-			<div class="card" style="width: 18rem;">
-				<img class="card-img-top" src="https://media.licdn.com/dms/image/C5603AQGBZE9ZFdQbxA/profile-displayphoto-shrink_200_200/0?e=1547078400&v=beta&t=qyox_W2tCRmWA85dSobV9oCeX7scvn29xRQLnJqSa8g" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Héctor Martín Solís</h5>
-					<p class="card-text">Desarrollador web full stack.</p>
-					<p class="card-text">Viajero.</p>
-					<p class="card-text">Apasionado de las nuevas tecnologías.</p>
-					<p class="card-text">Cinéfilo y seríefilo.</p>
+			<div class="row">
+				<div class="col-md">
+					<center>
+						<img class="img-fluid rounded-circle" src="./img/hector.jpg" alt="Héctor Martín">
+					</center>
+				</div>
+
+				<div class="col-md">
+					<h3>Héctor Martín Solís</h3>
+					<p><b>Desarrollador Web Full Stack</b></p>
+					<p>Apasionado de la informática y la tecnología. Siempre pendiente de las novedades tecnológicas e intentando estar al día.</p>
+					<p>Con gran pasión por viajar, intentando siempre hacer una escapada para conocer algún lugar nuevo.</p>
+					<p>Cinéfilo y seríefilo.</p>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<hr>
-		<div class="container mt-5 mb-5" id="contacto">
-			<h2><center>Contacto</center></h2>
-			<center>
-				<a class="btn btn-primary" href='mailto:hecmartinsol@gmail.com?Subject=Hello!'>
-					<i class="fas fa-envelope mr-3"></i>Email
-				</a>
-
-				<a class="btn btn-primary" href='https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/' target='_blank'>
-					<i class="fab fa-linkedin mr-3"></i>LinkedIn
-				</a>
-
-
-				<a class="btn btn-primary" href='https://github.com/HecMartinSol' target='_blank'>
-					<i class="fab fa-github mr-3"></i>GitHub
-				</a>
-			</center>
-		</div>	
-		<hr>
-
-		<div class="container mt-5 mb-5" id="trayectoria_profesional">
-			<h2><center>Trayectoria profesional</center></h2>
+	<div class="container-fluid bg-dark">
+		<div class="container pt-5 pb-5" id="trayectoria_profesional">
+			<h2 class="pb-5 text-white"><center>Trayectoria profesional</center></h2>
 
 			<ul class="timeline">
 				<li>
@@ -379,11 +379,29 @@ $list .= "<ul>";
 				</li>
 			</ul>
 		</div>
-
-
-
-
-		<?= $list ?>
 	</div>
+
+	<div class="container-fluid bg-secondary text-white">
+		<div class="container pt-5 pb-5" id="contacto">
+			<h2 class="pb-5"><center>Contacto</center></h2>
+			<center>
+				<a class="btn btn-danger" href='mailto:hecmartinsol@gmail.com?Subject=Hello!'>
+					<i class="fas fa-envelope mr-3"></i>Email
+				</a>
+
+				<a class="btn btn-primary" href='https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/' target='_blank'>
+					<i class="fab fa-linkedin mr-3"></i>LinkedIn
+				</a>
+
+
+				<a class="btn btn-dark" href='https://github.com/HecMartinSol' target='_blank'>
+					<i class="fab fa-github mr-3"></i>GitHub
+				</a>
+			</center>
+		</div>	
+	</div>	
+
+	<button class="btn btn-warning rounded-circle" onclick="goTopAction()" id="goTopButton" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
 </body>
 </html>
