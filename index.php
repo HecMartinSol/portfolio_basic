@@ -3,7 +3,7 @@
 <head>
 	<title>Héctor Martín Solís</title>
 	<link rel="icon" href="./img/icon.ico" type="image/x-icon" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -221,6 +221,8 @@
 			$('html, body').animate({
 			    scrollTop: $("#"+theID).offset().top
 			}, 1000);
+			$('nav a').removeClass('active');
+			$('#'+theID+"_pill").addClass('active');
 		}
 
 			window.onscroll = function() {scrollFunction()};
@@ -234,6 +236,7 @@
 
 			// When the user clicks on the button, scroll to the top of the document
 			function goTopAction() {
+				$('nav a').removeClass('active');
 				$('html, body').animate({
 				    scrollTop: $("body").offset().top
 				}, 1000);
@@ -243,35 +246,26 @@
 <body>
 
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+		<a class="navbar-brand" href="#">
+			<img src="./img/icon.svg" alt="H.M.S" class="d-inline-block align-top" style="height: 4em">
+		</a>
 
-			<a class="navbar-brand" href="#">
-				<img src="./img/icon.svg" width="50" height="50" alt="H.M.S">
-			</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#" onclick="animateToID('sobre_mi')">Sobre mi</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="animateToID('trayectoria_profesional')">Trayectoria</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="animateToID('contacto')">Contacto</a>
-					</li>
-				</ul>
-			</div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<nav class="nav nav-pills">
+				<a class="nav-item nav-link" href="#" id="sobre_mi_pill" onclick="animateToID('sobre_mi')"><i class="fas fa-info-circle"></i> Sobre mi</a>
+				<a class="nav-item nav-link" href="#" id="trayectoria_profesional_pill" onclick="animateToID('trayectoria_profesional')"><i class="fas fa-briefcase"></i> Trayectoria profesional</a>
+				<a class="nav-item nav-link" href="#" id="contacto_pill" onclick="animateToID('contacto')"><i class="fas fa-at"></i> Contacto</a>
+			</nav>
 		</div>
 	</nav>
 
 	<div class="container-fluid" id="banner_logo">
-		<div class="container align-middle p-5">
+		<div class="align-middle p-5">
 			<center>
 				<img src="./img/logo.png" class="img-fluid">
 			</center>
@@ -279,8 +273,8 @@
 	</div>
 
 	<div class="container-fluid text-white" style="background: #1D4E69;">
-		<div class="container pt-5 pb-5" id="sobre_mi">
-			<h2 class="pb-5"><center>Sobre mi</center></h2>
+		<div class="pt-5 pb-5" id="sobre_mi">
+			<h2 class="pb-5"><center><i class="fas fa-info-circle"></i> Sobre mi</center></h2>
 
 			<div class="row">
 				<div class="col-md">
@@ -290,21 +284,22 @@
 				</div>
 
 				<div class="col-md">
-					<h3>Héctor Martín Solís</h3>
+					<h3 class="pt-2">Héctor Martín Solís</h3>
 					<p><b>Desarrollador Web Full Stack</b></p>
-					<p>Apasionado de la informática y la tecnología. Siempre pendiente de las novedades tecnológicas e intentando estar al día.</p>
-					<p>Con gran pasión por viajar, intentando siempre hacer una escapada para conocer algún lugar nuevo.</p>
-					<p>Cinéfilo y seríefilo.</p>
+					<p>Soy de la informática y la tecnología. Procuro estar siempre pendiente de las novedades tecnológicas para intentando estar al día de manera autodidacta.</p>
+					<p>Me encanta viajar, y siempre que tengo la oportunidad intento hacer una escapada para conocer algún lugar nuevo.</p>
+					<p>También disfruto en casa con series, películas, videojuegos y cómic.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="container-fluid bg-dark">
-		<div class="container pt-5 pb-5" id="trayectoria_profesional">
-			<h2 class="pb-5 text-white"><center>Trayectoria profesional</center></h2>
+		<div class="pt-5 pb-5" id="trayectoria_profesional">
+			<h2 class="pb-5 text-white"><center><i class="fas fa-briefcase"></i> Trayectoria profesional</center></h2>
 
 			<ul class="timeline">
+				<!-- Kiosko y más -->
 				<li>
 					<div class="timeline-badge danger"><i class="fas fa-newspaper"></i></div>
 					<div class="timeline-panel">
@@ -314,11 +309,8 @@
 						</div>
 						<div class="timeline-body">
 							<p><b>Desarrollador Web Full Stack</b></p>
-							<p>Desarrollo de nuevas funcionalidades para la web de la empresa.</p>
-							<p>Desarrollo del sistema de suscripciones y la pasarela de pagos de la empresa.</p>
-							<p>Desarrollo e integración de APIs propias y de terceros.</p>
-							<p>Participación activa en la captura de requisitos, especificación, análisis y planificación de tareas siguiendo metodologías ágiles.</p>
-							<p>Desarrollo íntegro de la <a href="http://pressclipping.cedro.org" target="_blank">plataforma de PressClipping de Cedro</a></p>
+							<p>Encargado del desarrollo de nuevas funcionalidades para la web de la empresa, así como el mantenimiento.</p>
+							<p>Participación activa en todas las fases del desarrollo: captura de requisitos, especificación, análisis y planificación de tareas siguiendo metodologías ágiles.</p>
 							<p>Tecnologías:
 								<ul style="list-style: none;">
 									<li><i class="fas fa-code"></i> PHP con framework CodeIgniter</li>
@@ -329,9 +321,50 @@
 									<li><i class="fas fa-project-diagram"></i> SCRUM</li>
 								</ul>
 							</p>
+							<p class="float-right">
+								<button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modal_kioskoymas">
+									Más info.
+								</button>
+
+								<div class="modal fade" id="modal_kioskoymas" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document" >
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLongTitle">
+													<div class="badge badge-danger rounded-circle p-2"><i class="fas fa-newspaper"></i></div>
+													Kiosko y Más: responsabilidades
+												</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<ul>
+													<li>Captura de requisitos, especificación, análisis y planificación de nuevas tareas.</li>
+													<li>Coordinación de los desarrollos del equipo siguiendo metodologías ágiles.</li>
+													<li>Encargado de las integraciones continuas y despliegues utilizando GIT como control de versiones.</li>
+													<li>Administración y gestión de los servidores de la empresa.</li>
+													<li>Diseño, administración y mantenimiento de la Base de Datos de la empresa.</li>
+													<li>Desarrollo del sistema de suscripciones/transacciones de la empresa.</li>
+													<li>Desarrollo de la pasarela de pagos de la empresa.</li>
+													<li>Desarrollo de APIs REST para proveer servicios a terceros.</li>
+													<li>Integración de APIs y servicios web dentro del sistema.</li>
+													<li>Desarrollo íntegro de la <a href="http://pressclipping.cedro.org" target="_blank">plataforma de PressClipping de Cedro</a></li>
+												</ul>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</p>
 						</div>
 					</div>
 				</li>
+				<!-- / Kiosko y más -->
+
+				<!-- Codeeta -->
 				<li class="timeline-inverted">
 					<div class="timeline-badge primary"><i class="fas fa-credit-card"></i></div>
 					<div class="timeline-panel">
@@ -340,11 +373,15 @@
 							<p><small class="text-muted"><i class="fas fa-calendar"></i> Desde Septiembre de 2015 hasta Marzo de 2016</small></p>
 						</div>
 						<div class="timeline-body">
+							<p><b>Desarrollador Web Full Stack</b></p>
 							<p>Desarrollador full stack externo para <a href="https://www.kioskoymas.com" target="_blank">Kiosko y Más</a>.</p>
+							<p>Mismas funcionalidades.</p>
 						</div>
 					</div>
 				</li>
-				<!-- -->
+				<!-- / Codeeta -->
+
+				<!-- Bosch -->
 				<li>
 					<div class="timeline-badge info"><i class="fas fa-industry"></i></div>
 					<div class="timeline-panel">
@@ -353,14 +390,34 @@
 							<p><small class="text-muted"><i class="fas fa-calendar"></i> Desde Noviembre de 2014 hasta Junio de 2015</small></p>
 						</div>
 						<div class="timeline-body">
+							<p><b>Becario en departamento de sistemas</b></p>
 							<p>Formación práctica de la Universidad compaginando con los estudios.</p>
 							<p>Apoyo al equipo informático en desarrollo de scripts para automatización de tareas en sistemas Windows.</p>
 							<p>Generación de etiquetas mediante su programación ZPL para impresoras Zebra.</p>
 						</div>
 					</div>
 				</li>
+				<!-- /Bosch -->
 
+				<!-- First -->
 				<li class="timeline-inverted">
+					<div class="timeline-badge success"><i class="fas fa-language"></i></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title"><a href="https://www.cambridgeinstitute.net/" target="_blank">Cambridge Institute</a></h4>
+							<p><small class="text-muted"><i class="fas fa-calendar"></i> 2012</small></p>
+						</div>
+						<div class="timeline-body">
+							<p><b>First Certificate in English</b></p>
+							<p>Obtención del certificado en el nivel B2 de Inglés. </p>
+							<p>Licencia 0034615102</p>
+						</div>
+					</div>
+				</li>
+				<!-- / First -->
+
+				<!-- Universidad -->
+				<li>
 					<div class="timeline-badge"><i class="fas fa-user-graduate"></i></div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
@@ -369,7 +426,8 @@
 						</div>
 						<div class="timeline-body">
 							<p><b>Grado en Ingeniería del Software</b></p>
-							<p>Estudié durante 4 años la carrera de ingeniería del Software en la Universidad Complutense de Madrid, en la Facultad de Informática del Campus Universitario de Moncloa.</p>
+							<p>Estudié durante 5 años la carrera de ingeniería del Software en la Universidad Complutense de Madrid, en la Facultad de Informática del Campus Universitario de Moncloa.</p>
+							<p>Curso por año, a excepción del último, en el que dejé el proyecto fin de carrera para poder trabajar mientras lo terminaba.</p>
 							<br>
 							<p><small class="text-muted"><i class="fas fa-calendar"></i> De Julio de 2013 a Enero de 2014</small></p>
 							<p><b>Beca de colaboración en la Facultad de Comercio y Turismo</b></p>
@@ -377,15 +435,18 @@
 						</div>
 					</div>
 				</li>
+				<!-- / Universidad -->
 			</ul>
 		</div>
 	</div>
 
 	<div class="container-fluid bg-secondary text-white">
-		<div class="container pt-5 pb-5" id="contacto">
-			<h2 class="pb-5"><center>Contacto</center></h2>
+		<div class="pt-5 pb-5" id="contacto">
+			<h2 class="pb-5"><center><i class="fas fa-at"></i> Contacto</center></h2>
 			<center>
-				<a class="btn btn-danger" href='mailto:hecmartinsol@gmail.com?Subject=Hello!'>
+				<p>¡Contacta conmigo!</p>
+
+				<a class="btn btn-danger" href='mailto:hecmartinsol@gmail.com?Subject=Hello!' id="btn_my_email">
 					<i class="fas fa-envelope mr-3"></i>Email
 				</a>
 
