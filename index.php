@@ -3,7 +3,7 @@
 <head>
 	<title>Héctor Martín Solís</title>
 	<link rel="icon" href="./img/icon.ico" type="image/x-icon" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -442,27 +442,37 @@
 
 	<div class="container-fluid bg-secondary text-white">
 		<div class="pt-5 pb-5" id="contacto">
-			<h2 class="pb-5"><center><i class="fas fa-at"></i> Contacto</center></h2>
+			<h2 class="pb-3"><center><i class="fas fa-at"></i> Contacto</center></h2>
 			<center>
-				<p>¡Contacta conmigo!</p>
-
-				<a class="btn btn-danger" href='mailto:hecmartinsol@gmail.com?Subject=Hello!' id="btn_my_email">
-					<i class="fas fa-envelope mr-3"></i>Email
+				<a class="btn btn-success mb-3" href='./resources/cv_hector_martin_solis.pdf' id="btn_my_cv" download style="width: 10rem;" title="Descargar Currículum">
+					<i class="fas fa-file-alt mr-3 mt-1 float-left"></i>Currículum
 				</a>
+				<br>
 
-				<a class="btn btn-primary" href='https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/' target='_blank'>
-					<i class="fab fa-linkedin mr-3"></i>LinkedIn
+				<a class="btn btn-danger mb-3" href='mailto:hecmartinsol@gmail.com?Subject=Hello!' id="btn_my_email" style="width: 10rem;" title="Enviar email">
+					<i class="fas fa-envelope mr-3 mt-1 float-left"></i>Email
 				</a>
+				<br>
 
-
-				<a class="btn btn-dark" href='https://github.com/HecMartinSol' target='_blank'>
-					<i class="fab fa-github mr-3"></i>GitHub
+				<a class="btn btn-primary mb-3" href='https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/' target='_blank' style="width: 10rem;" title="Visitar LinkedIn">
+					<i class="fab fa-linkedin mr-3 mt-1 float-left"></i>LinkedIn
 				</a>
+				<br>
+
+				<a class="btn btn-dark mb-3" href='https://github.com/HecMartinSol' target='_blank' style="width: 10rem;" title="Visitar GitHub">
+					<i class="fab fa-github mr-3 mt-1 float-left"></i>GitHub
+				</a>
+				<br>
 			</center>
 		</div>	
 	</div>	
 
 	<button class="btn btn-warning rounded-circle" onclick="goTopAction()" id="goTopButton" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
 
+	<div class="container-fluid bg-light text-gray-dark pt-3">
+		<center>
+			<p><?= date("Y") ?> © Copyright: Héctor Martín Solís</p>
+		</center>
+	</div>
 </body>
 </html>
