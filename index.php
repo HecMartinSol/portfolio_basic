@@ -286,7 +286,7 @@
 				<div class="col-md">
 					<h3 class="pt-2">Héctor Martín Solís</h3>
 					<p><b>Desarrollador Web Full Stack</b></p>
-					<p>Soy de la informática y la tecnología. Procuro estar siempre pendiente de las novedades tecnológicas para intentando estar al día de manera autodidacta.</p>
+					<p>Soy un apasionado de la informática y la tecnología. Procuro estar siempre pendiente de nuevas tecnologías, herramientas y técnicas para intentar aprender de manera autodidacta y mantenerme al día.</p>
 					<p>Me encanta viajar, y siempre que tengo la oportunidad intento hacer una escapada para conocer algún lugar nuevo.</p>
 					<p>También disfruto en casa con series, películas, videojuegos y cómic.</p>
 				</div>
