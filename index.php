@@ -15,206 +15,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- Timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive -->
-	<style type="text/css">
-		#banner_logo{
-			background-image: url("./img/bg_pattern2.png");
-		}
-
-		.timeline {
-			list-style: none;
-			padding: 20px 0 20px;
-			position: relative;
-		}
-
-		.timeline:before {
-			top: 0;
-			bottom: 0;
-			position: absolute;
-			content: " ";
-			width: 3px;
-			background-color: #eeeeee;
-			left: 50%;
-			margin-left: -1.5px;
-		}
-
-		.timeline > li {
-			margin-bottom: 20px;
-			position: relative;
-		}
-
-		.timeline > li:before,
-		.timeline > li:after {
-			content: " ";
-			display: table;
-		}
-
-		.timeline > li:after {
-			clear: both;
-		}
-
-		.timeline > li:before,
-		.timeline > li:after {
-			content: " ";
-			display: table;
-		}
-
-		.timeline > li:after {
-			clear: both;
-		}
-
-		.timeline > li > .timeline-panel {
-			width: 46%;
-			float: left;
-			border: 1px solid #d4d4d4;
-			border-radius: 2px;
-			padding: 20px;
-			position: relative;
-			-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-			box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-			background: #f9f9f9;
-		}
-
-		.timeline > li > .timeline-panel:before {
-			position: absolute;
-			top: 26px;
-			right: -15px;
-			display: inline-block;
-			border-top: 15px solid transparent;
-			border-left: 15px solid #ccc;
-			border-right: 0 solid #ccc;
-			border-bottom: 15px solid transparent;
-			content: " ";
-		}
-
-		.timeline > li > .timeline-panel:after {
-			position: absolute;
-			top: 27px;
-			right: -14px;
-			display: inline-block;
-			border-top: 14px solid transparent;
-			border-left: 14px solid #fff;
-			border-right: 0 solid #fff;
-			border-bottom: 14px solid transparent;
-			content: " ";
-		}
-
-		.timeline > li > .timeline-badge {
-			color: #fff;
-			width: 50px;
-			height: 50px;
-			line-height: 50px;
-			font-size: 1.4em;
-			text-align: center;
-			position: absolute;
-			top: 16px;
-			left: 50%;
-			margin-left: -25px;
-			background-color: #999999;
-			z-index: 100;
-			border-top-right-radius: 50%;
-			border-top-left-radius: 50%;
-			border-bottom-right-radius: 50%;
-			border-bottom-left-radius: 50%;
-		}
-
-		.timeline > li.timeline-inverted > .timeline-panel {
-			float: right;
-		}
-
-		.timeline > li.timeline-inverted > .timeline-panel:before {
-			border-left-width: 0;
-			border-right-width: 15px;
-			left: -15px;
-			right: auto;
-		}
-
-		.timeline > li.timeline-inverted > .timeline-panel:after {
-			border-left-width: 0;
-			border-right-width: 14px;
-			left: -14px;
-			right: auto;
-		}
-
-		.timeline-badge.primary {
-			background-color: #2e6da4 !important;
-		}
-
-		.timeline-badge.success {
-			background-color: #3f903f !important;
-		}
-
-		.timeline-badge.warning {
-			background-color: #f0ad4e !important;
-		}
-
-		.timeline-badge.danger {
-			background-color: #d9534f !important;
-		}
-
-		.timeline-badge.info {
-			background-color: #5bc0de !important;
-		}
-
-		.timeline-title {
-			margin-top: 0;
-			color: inherit;
-		}
-
-		.timeline-body > p,
-		.timeline-body > ul {
-			margin-bottom: 0;
-		}
-
-		.timeline-body > p + p {
-			margin-top: 5px;
-		}
-
-		@media (max-width: 767px) {
-			ul.timeline:before {
-				left: 40px;
-			}
-
-			ul.timeline > li > .timeline-panel {
-				width: calc(100% - 90px);
-				width: -moz-calc(100% - 90px);
-				width: -webkit-calc(100% - 90px);
-			}
-
-			ul.timeline > li > .timeline-badge {
-				left: 15px;
-				margin-left: 0;
-				top: 16px;
-			}
-
-			ul.timeline > li > .timeline-panel {
-				float: right;
-			}
-
-			ul.timeline > li > .timeline-panel:before {
-				border-left-width: 0;
-				border-right-width: 15px;
-				left: -15px;
-				right: auto;
-			}
-
-			ul.timeline > li > .timeline-panel:after {
-				border-left-width: 0;
-				border-right-width: 14px;
-				left: -14px;
-				right: auto;
-			}
-		}
-
-		/** ------------------ */
-		#goTopButton {
-		  display: none;
-		  position: fixed;
-		  bottom: 20px;
-		  right: 30px;
-		  z-index: 99;
-		}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="resources/css/timeline.css">
 
 	<script type="text/javascript">
 		function animateToID(theID) {
@@ -299,13 +100,30 @@
 			<h2 class="pb-5 text-white"><center><i class="fas fa-briefcase"></i> Trayectoria profesional</center></h2>
 
 			<ul class="timeline">
+				<!-- bbva -->
+				<li class="timeline-inverted">
+					<div class="timeline-badge primary"><i class="fas fa-money-check-alt"></i></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title"><a href="http://bbva.com/" target="_blank">BBVA</a></h4>
+							<p><small class="text-muted"><i class="fas fa-calendar"></i> Actualmente, desde Noviembre de 2018</small></p>
+						</div>
+						<div class="timeline-body">
+							<p><b>Analista desarrollador PHP</b></p>
+							<p>Contratación externa desde <a href="http://www.aubay.es/" target="_blank">Aubay</a>.</p>
+						</div>
+					</div>
+				</li>
+				<!-- / bbva -->
+
+
 				<!-- Kiosko y más -->
 				<li>
 					<div class="timeline-badge danger"><i class="fas fa-newspaper"></i></div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
 							<h4 class="timeline-title"><a href="https://www.kioskoymas.com" target="_blank">Kiosko y Más</a></h4>
-							<p><small class="text-muted"><i class="fas fa-calendar"></i> Actualmente, desde Septiembre de 2015</small></p>
+							<p><small class="text-muted"><i class="fas fa-calendar"></i> Desde Septiembre de 2015 hasta Noviembre de 2018</small></p>
 						</div>
 						<div class="timeline-body">
 							<p><b>Desarrollador Web Full Stack</b></p>
@@ -461,6 +279,11 @@
 
 				<a class="btn btn-dark mb-3" href='https://github.com/HecMartinSol' target='_blank' style="width: 10rem;" title="Visitar GitHub">
 					<i class="fab fa-github mr-3 mt-1 float-left"></i>GitHub
+				</a>
+				<br>
+
+				<a class="btn btn-warning mb-3" href='http://dev.hecmartinsol.es' target='_blank' style="width: 10rem;" title="Visitar Desarrollo">
+					<i class="fas fa-code mr-3 mt-1 float-left"></i>Desarrollo
 				</a>
 				<br>
 			</center>
