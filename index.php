@@ -395,7 +395,7 @@
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row" hidden>
 					<div class="col-12">
 						<a class="btn btn-warning mb-3" href='http://dev.hecmartinsol.es' target='_blank' style="width: 10rem;" title="Visitar Desarrollo">
 							<i class="fas fa-code mr-3 mt-1 float-left"></i>Desarrollo
