@@ -1,7 +1,9 @@
 /** 
 Timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive
 */
-
+#tecnologias ul{
+	list-style: none;
+}
 #banner_logo{
 	background-image: url("./img/bg_pattern2.png");
 }

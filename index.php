@@ -60,6 +60,7 @@
 			<nav class="nav nav-pills">
 				<a class="nav-item nav-link" href="#" id="sobre_mi_pill" onclick="animateToID('sobre_mi')"><i class="fas fa-info-circle"></i> Sobre mi</a>
 				<a class="nav-item nav-link" href="#" id="trayectoria_profesional_pill" onclick="animateToID('trayectoria_profesional')"><i class="fas fa-briefcase"></i> Trayectoria profesional</a>
+				<a class="nav-item nav-link" href="#" id="tecnologias_pill" onclick="animateToID('tecnologias')"><i class="fas fa-memory"></i> Tecnologías</a>
 				<a class="nav-item nav-link" href="#" id="contacto_pill" onclick="animateToID('contacto')"><i class="fas fa-at"></i> Contacto</a>
 			</nav>
 		</div>
@@ -258,35 +259,150 @@
 		</div>
 	</div>
 
+	<div class="container-fluid bg-success text-white">
+		<div class="pt-5 pb-5" id="tecnologias">
+			<h2 class="pb-3"><center><i class="fas fa-memory"></i> Tecnologías</center></h2>
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-4">
+						<ul>
+							<li> 
+								<i class="fab fa-php"></i> PHP 7 + frameworks
+								<ul>
+									<li>Codeigniter 3</li>
+									<li>Symfony 4</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<ul>
+							<li> 
+								<i class="fab fa-js-square"></i> JavaScript  ES6
+								<ul>
+									<li> <i class="fab fa-jquery"></i> jQuery </li>
+									<li> <i class="fab fa-vuejs"></i> VueJS </li>
+									<li> <i class="fab fa-angular"></i> Angular </li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+					<div class="col-4">
+						<ul>
+							<li> 
+								<i class="fab fa-html5"></i> HTML5 + <i class="fab fa-css3"></i> CSS3 
+								<ul>
+									<li>Bootstrap 4</li>
+									<li>Foundation</li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<ul>
+							<li> 
+								<i class="fas fa-database"></i> Bases de Datos
+								<ul>
+									<li>MySQL / SQLServer </li>
+									<li>MongoDB </li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="col-4">
+						<ul>
+							<li>
+								<i class="fab fa-git"></i> Control de versiones
+								<ul>
+									<li><i class="fab fa-github"></i> Git</li>
+									<li><i class="fab fa-bitbucket"></i> Bitbucket</li>
+									<li> SVN</li>
+								</ul>
+							</li>						
+						</ul>
+					</div>
+					<div class="col-4">
+						<ul>
+							<li>
+
+								<i class="fas fa-server"></i> Sistemas
+								<ul>
+									<li><i class="fab fa-windows"></i> Windows</li>
+									<li><i class="fab fa-ubuntu"></i> Ubuntu</li>
+									<li><i class="fab fa-centos"></i> Centos</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<ul>
+							<li> 
+								<i class="fab fa-node"></i> Node
+								<ul>
+									<li><i class="fab fa-node-js"></i> NodeJS</li>
+									<li><i class="fab fa-npm"></i> NPM</li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+					<div class="col-4">
+						<ul>
+							<li> <i class="fab fa-docker"></i> Docker </li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>	
+	</div>	
+
 	<div class="container-fluid bg-secondary text-white">
 		<div class="pt-5 pb-5" id="contacto">
 			<h2 class="pb-3"><center><i class="fas fa-at"></i> Contacto</center></h2>
-			<center>
-				<a class="btn btn-success mb-3" href='./resources/cv_hector_martin_solis.pdf' id="btn_my_cv" download style="width: 10rem;" title="Descargar Currículum">
-					<i class="fas fa-file-alt mr-3 mt-1 float-left"></i>Currículum
-				</a>
-				<br>
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-6">
+						<a class="btn btn-success mb-3" href='./resources/cv_hector_martin_solis.pdf' id="btn_my_cv" download style="width: 10rem;" title="Descargar Currículum">
+							<i class="fas fa-file-alt mr-3 mt-1 float-left"></i>Currículum
+						</a>
+					</div>
+					<div class="col-6">
+						<a class="btn btn-danger mb-3" href='mailto:hecmartinsol@gmail.com?Subject=Hello!' id="btn_my_email" style="width: 10rem;" title="Enviar email">
+							<i class="fas fa-envelope mr-3 mt-1 float-left"></i>Email
+						</a>
+					</div>
+				</div>
 
-				<a class="btn btn-danger mb-3" href='mailto:hecmartinsol@gmail.com?Subject=Hello!' id="btn_my_email" style="width: 10rem;" title="Enviar email">
-					<i class="fas fa-envelope mr-3 mt-1 float-left"></i>Email
-				</a>
-				<br>
+				<div class="row">
+					<div class="col-6">
+						<a class="btn btn-primary mb-3" href='https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/' target='_blank' style="width: 10rem;" title="Visitar LinkedIn">
+							<i class="fab fa-linkedin mr-3 mt-1 float-left"></i>LinkedIn
+						</a>
+					</div>
+					<div class="col-6">
+						<a class="btn btn-dark mb-3" href='https://github.com/HecMartinSol' target='_blank' style="width: 10rem;" title="Visitar GitHub">
+							<i class="fab fa-github mr-3 mt-1 float-left"></i>GitHub
+						</a>
+					</div>
+				</div>
 
-				<a class="btn btn-primary mb-3" href='https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/' target='_blank' style="width: 10rem;" title="Visitar LinkedIn">
-					<i class="fab fa-linkedin mr-3 mt-1 float-left"></i>LinkedIn
-				</a>
-				<br>
-
-				<a class="btn btn-dark mb-3" href='https://github.com/HecMartinSol' target='_blank' style="width: 10rem;" title="Visitar GitHub">
-					<i class="fab fa-github mr-3 mt-1 float-left"></i>GitHub
-				</a>
-				<br>
-
-				<a class="btn btn-warning mb-3" href='http://dev.hecmartinsol.es' target='_blank' style="width: 10rem;" title="Visitar Desarrollo">
-					<i class="fas fa-code mr-3 mt-1 float-left"></i>Desarrollo
-				</a>
-				<br>
-			</center>
+				<div class="row">
+					<div class="col-12">
+						<a class="btn btn-warning mb-3" href='http://dev.hecmartinsol.es' target='_blank' style="width: 10rem;" title="Visitar Desarrollo">
+							<i class="fas fa-code mr-3 mt-1 float-left"></i>Desarrollo
+						</a>	
+					</div>
+				</div>
+			</div>
 		</div>	
 	</div>	
 
