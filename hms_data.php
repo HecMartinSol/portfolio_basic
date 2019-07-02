@@ -10,6 +10,17 @@
 			"github" => "https://github.com/HecMartinSol",
 			"description" => ""
 		],
+		"studies" => [
+			[
+				"from_date" => "2012",
+				"to_date" => "2017",
+				"studies" => "Grado en Ingeniería del Software",
+				"location" => "Universidad Complutense de Madrid",
+				"location_url" => "https://www.ucm.es/",
+				"info" => " Estudié durante 5 años la carrera de ingeniería del Software en la Universidad Complutense de Madrid, en la Facultad de Informática del Campus Universitario de Moncloa.\n
+							Curso por año, a excepción del último, en el que dejé el proyecto fin de carrera para poder trabajar mientras lo terminaba.",
+			],
+		],
 		"jobs" => [
 			[
 				"from_date" => "2019-04",
@@ -76,10 +87,27 @@
 				"tech" => [],
 				"more_info" => ""
 			],
+			[
+				"from_date" => "2013-07",
+				"to_date" => "2014-01",
+				"company" => "Facultad de Comercio y Turismo UCM",
+				"company_link" => "#",
+				"title" =>	"Beca de colaboración",
+				"info" => "Beca de formación práctica en la Secretaría de la facultad de Comercio y Turismo mientras compaginaba los estudios en la Facultad de Informática.\n",
+				"tech" => [],
+				"more_info" => ""
+			],
 
 		],
-		"certifications" => [],
-		"studies" => [],
+		"certifications" => [
+			[
+				"date" => "2012",
+				"url" => "https://www.cambridgeinstitute.net/",
+				"title" => "First Certificate in English (B2)",
+				"info" => " Obtención del certificado en el nivel B2 de Inglés en el Instituto Cambridge\n.
+							Licencia 0034615102",
+			],
+		],
 	];
 
 
