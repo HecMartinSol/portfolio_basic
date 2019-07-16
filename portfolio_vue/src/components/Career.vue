@@ -3,6 +3,54 @@
 		<h2 class="pb-5 text-white"><center><i class="fas fa-briefcase"></i> Trayectoria profesional</center></h2>
 
 		<ul class="timeline">
+
+			<li v-for="i in hms.jobs.length" :class="(i-1) % 2 == 0 ? 'timeline-inverted' : ''">
+				<div :class="'timeline-badge ' + hms.jobs[(i-1)].budget_class"><i :class="hms.jobs[(i-1)].budget_icon_class"></i></div>
+
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h4 class="timeline-title"><a :href=" hms.jobs[(i-1)].company_link " target="_blank">{{ hms.jobs[(i-1)].company }}</a></h4>
+						<p><small class="text-muted"><i class="fas fa-calendar"></i> Desde {{ hms.jobs[(i-1)].from_date }} {{ hms.jobs[(i-1)].to_date == null ? '' : 'hasta ' + hms.jobs[(i-1)].to_date }}</small></p>
+					</div>
+
+					<div class="timeline-body">
+						<p><b>{{ hms.jobs[(i-1)].title }}</b></p>
+						<p>{{ hms.jobs[(i-1)].info }}</p>
+
+						<div v-if="hms.jobs[i-1].more_info != ''">
+							<p class="float-right">
+								<button type="button" class="btn btn-sm btn-success" data-toggle="modal" :data-target="'#modal_' + i">
+									Más info.
+								</button>
+
+								<div class="modal fade" :id="'modal_' + i" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document" >
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLongTitle">
+													<div class="badge badge-danger rounded-circle p-2"><i class="fas fa-newspaper"></i></div>
+													{{ hms.jobs[(i-1)].company }} <small>más información</small>
+												</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p>{{ hms.jobs[(i-1)].mode_info }}</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</li>
+
 			<!-- bbva -->
 			<li class="timeline-inverted">
 				<div class="timeline-badge primary"><i class="fas fa-money-check-alt"></i></div>
@@ -163,10 +211,14 @@
 </template>
 
 <script>
+	import hms_data from '../assets/hms_data.json';
+	// hms_data.me.description = hms_data.me.description.replace("\n","<br>"); 
+	console.log(hms_data);
 
 	export default {
 		data () {
 			return {
+				hms: hms_data
 			}
 		}
 	}

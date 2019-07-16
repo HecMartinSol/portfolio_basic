@@ -3,12 +3,13 @@
 	$info = [
 		"me" => [
 			"name" => "Héctor Martín Solís",
+			"title" => "Desarrollador Web Full Stack",
 			"email" => "hecmartinsol@gmail.com",
 			"phone" => 620518570,
 			"cv" => "./resources/cv_hector_martin_solis.pdf",
 			"linkedin" => "https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/",
 			"github" => "https://github.com/HecMartinSol",
-			"description" => ""
+			"description" => "Apasionado de las nuevas tecnologías\nMe gusta estar en constante aprendizaje y entender cómo dar mejor solución a los problemas\n"
 		],
 		"studies" => [
 			[
@@ -23,6 +24,9 @@
 		],
 		"jobs" => [
 			[
+				"budget_class" => "primary",
+				"budget_icon_class" => "fas fa-globe",
+
 				"from_date" => "2019-04",
 				"to_date" => NULL,
 				"company" => "Internet República",
@@ -36,6 +40,9 @@
 				"more_info" => ""
 			],
 			[
+				"budget_class" => "danger",
+				"budget_icon_class" => "fas fa-money-check-alt",
+
 				"from_date" => "2018-11",
 				"to_date" => "2019-04",
 				"company" => "Aubay",
@@ -47,6 +54,9 @@
 				"more_info" => ""
 			],
 			[
+				"budget_class" => "primary",
+				"budget_icon_class" => "fas fa-newspaper",
+
 				"from_date" => "2015-09",
 				"to_date" => "2018-11",
 				"company" => "Kiosko y Más",
@@ -65,6 +75,9 @@
 								"
 			],
 			[
+				"budget_class" => "info",
+				"budget_icon_class" => "fas fa-credit-card",
+
 				"from_date" => "2015-09",
 				"to_date" => "2016-03",
 				"company" => "Codeeta",
@@ -76,6 +89,9 @@
 				"more_info" => ""
 			],
 			[
+				"budget_class" => "success",
+				"budget_icon_class" => "fas fa-industry",
+
 				"from_date" => "2014-09",
 				"to_date" => "2015-06",
 				"company" => "Robert Bosch España",
@@ -88,6 +104,9 @@
 				"more_info" => ""
 			],
 			[
+				"budget_class" => "",
+				"budget_icon_class" => "fas fa-user-graduate",
+
 				"from_date" => "2013-07",
 				"to_date" => "2014-01",
 				"company" => "Facultad de Comercio y Turismo UCM",
@@ -111,11 +130,14 @@
 	];
 
 
-	$info = json_encode($info, JSON_PRETTY_PRINT);
-	$info = str_replace("\t", "", $info);
-	$info = str_replace("\r\t", "", $info);
+	$info = json_encode($info, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
+	# $info = str_replace("\t", "", $info);
+	# $info = str_replace("\r\t", "", $info);
 
-	header("Content-type: text/plain");
-	echo $info;
+	$assetsPath = "./portfolio_vue/src/assets";
+	if (!file_exists($assetsPath)) 
+		mkdir($assetsPath, 0777, true);
 
+	file_put_contents("{$assetsPath}/hms_data.json", $info);
+	echo "---> JSON GENERATED \n";
 ?>
