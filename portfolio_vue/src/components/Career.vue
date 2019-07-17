@@ -15,7 +15,7 @@
 
 					<div class="timeline-body">
 						<p><b>{{ hms.jobs[(i-1)].title }}</b></p>
-						<p>{{ hms.jobs[(i-1)].info }}</p>
+						<p v-for="line in hms.jobs[(i-1)].info.split('\n')" >{{ line }}<p>
 
 						<div v-if="hms.jobs[i-1].more_info != ''">
 							<p class="float-right">
@@ -36,7 +36,7 @@
 												</button>
 											</div>
 											<div class="modal-body">
-												<p>{{ hms.jobs[(i-1)].mode_info }}</p>
+												<p>{{ hms.jobs[(i-1)].more_info }}</p>
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
