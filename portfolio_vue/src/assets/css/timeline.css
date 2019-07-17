@@ -9,10 +9,8 @@ Timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive
 }
 .full_page_container{
 	position: absolute;
-	min-width: 100%;
-	max-width: 100%;
 	min-height: 100%;
-	max-height: 100%;
+	padding-top: 10%; 
 }
 
 .timeline {
@@ -164,7 +162,12 @@ Timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive
 	margin-top: 5px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 880px) {
+	.full_page_container{
+		padding-top: 15%;
+	}
+
+
 	ul.timeline:before {
 		left: 40px;
 	}

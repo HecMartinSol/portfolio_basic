@@ -127,6 +127,37 @@
 							Licencia 0034615102",
 			],
 		],
+		"tech" => [
+			[ "name" => "PHP 7", "image" => "php.png"],
+				[ "name" => "CodeIgniter", "image" => "codeigniter.png"],
+				[ "name" => "Symfony", "image" => "symfony.png"],
+
+			[ "name" => "JavaScript ES6", "image" => "js.png"],
+				[ "name" => "JQuery", "image" => "jquery.png"],
+				[ "name" => "Vue.js", "image" => "vuejs.png"],
+				[ "name" => "Angular", "image" => "angular.png"],
+				[ "name" => "Node JS", "image" => "nodejs.png"],
+				[ "name" => "npm", "image" => "npm.png"],
+
+			[ "name" => "HTML5", "image" => "html5.png"],
+			[ "name" => "CSS3", "image" => "css3.png"],
+			[ "name" => "Bootstrap", "image" => "bootstrap.png"],
+			[ "name" => "Foundation", "image" => "foundation.png"],
+			
+			[ "name" => "Doctrine", "image" => "doctrine.png"],
+			[ "name" => "MySQL", "image" => "mysql.png"],
+			[ "name" => "SQLServer", "image" => "sqlserver.png"],
+			[ "name" => "MongoDB", "image" => "mongodb.png"],
+
+			[ "name" => "GitHub", "image" => "github.png"],
+			[ "name" => "Bitbucket", "image" => "bitbucket.png"],
+			[ "name" => "Subversion", "image" => "subversion.png"],
+			[ "name" => "Windows", "image" => "windows.png"],
+			[ "name" => "Ubuntu", "image" => "ubuntu.png"],
+			[ "name" => "CentOS", "image" => "centos.png"],
+			[ "name" => "Docker", "image" => "docker.png"],
+			[ "name" => "Vagrant", "image" => "vagrant.png"],
+		]
 	];
 
 
