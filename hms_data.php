@@ -132,7 +132,7 @@
 				[ "name" => "CodeIgniter", "image" => "codeigniter.png"],
 				[ "name" => "Symfony", "image" => "symfony.png"],
 
-			[ "name" => "JavaScript ES6", "image" => "js.png"],
+			[ "name" => "JavaScript", "image" => "js.png"],
 				[ "name" => "JQuery", "image" => "jquery.png"],
 				[ "name" => "Vue.js", "image" => "vuejs.png"],
 				[ "name" => "Angular", "image" => "angular.png"],
@@ -142,7 +142,7 @@
 			[ "name" => "HTML5", "image" => "html5.png"],
 			[ "name" => "CSS3", "image" => "css3.png"],
 			[ "name" => "Bootstrap", "image" => "bootstrap.png"],
-			[ "name" => "Foundation", "image" => "foundation.png"],
+			[ "name" => "Foundation", "image" => "foundation.jpg"],
 			
 			[ "name" => "Doctrine", "image" => "doctrine.png"],
 			[ "name" => "MySQL", "image" => "mysql.png"],
