@@ -3,6 +3,18 @@
 	--new-primary:#c62028;
 	--new-primary-clear:#c8434a;
 	--fluent-darkgray: #515C6B;
+
+	--h-bg-dark-1: #343a40;
+	--h-bg-dark-2: #484d53;
+	--h-bg-dark-3: #5c6166;
+	--h-bg-dark-4: #707579;
+	--h-bg-dark-5: #85888c;
+	--h-bg-dark-6: #999c9f;
+	--h-bg-dark-7: #adb0b2;
+	--h-bg-dark-8: #c2c3c5;
+	--h-bg-dark-9: #d6d7d8;
+	--h-bg-dark-10: #eaebeb;
+	--h-bg-dark-11: #ffffff;
 }
 
 body{
@@ -34,9 +46,7 @@ a{
 #tecnologias ul{
 	list-style: none;
 }
-#banner_logo{
-	background-image: url("../img/bg_pattern2.png");
-}
+
 .full_page_container{
 	position: absolute;
 	min-height: 100%;
