@@ -1,6 +1,36 @@
-/** 
-Timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive
-*/
+/* GENERAL */
+:root {
+	--new-primary:#c62028;
+	--new-primary-clear:#c8434a;
+	--fluent-darkgray: #515C6B;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif !important;
+}
+h2, h3{
+	font-family: 'Montserrat', sans-serif !important;
+}
+h2{
+	font-weight: bolder;
+	color: white;
+}
+a{
+	color: var(--new-primary) !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: rgb(255, 255, 255) !important;
+    background-color:  var(--new-primary)!important;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: #f1f1f1;  }
+::-webkit-scrollbar-thumb { background: #888;  }
+::-webkit-scrollbar-thumb:hover { background: #555;  }
+
+/*  Timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive */
 #tecnologias ul{
 	list-style: none;
 }
@@ -10,7 +40,7 @@ Timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive
 .full_page_container{
 	position: absolute;
 	min-height: 100%;
-	padding-top: 10%; 
+	padding-top: 2em; 
 }
 
 .timeline {

@@ -9,7 +9,7 @@
 			"cv" => "./resources/cv_hector_martin_solis.pdf",
 			"linkedin" => "https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/",
 			"github" => "https://github.com/HecMartinSol",
-			"description" => "Apasionado de las nuevas tecnologías\nMe gusta estar en constante aprendizaje y entender cómo dar mejor solución a los problemas\n"
+			"description" => "Apasionado de las nuevas tecnologías\nMe gusta estar en constante aprendizaje y entender cómo dar mejor solución a los problemas\nInteresado en "
 		],
 		"studies" => [
 			[
@@ -35,8 +35,9 @@
 				"info" => " Migración de la plataforma https://socialpubli.com/ a un sistema de microservicios con Symfony\n
 							Extracción de información de Redes Sociales utilizando scrapping con NodeJS\n
 							Implantación de un sistema de colas con RabbitMQ para gestión de procesos backend\n
+							Desarrollo servicios de APIs en NodeJS con Express y en Python con Flask\n
 							",
-				"tech" => ["PHP 7", "Vagrant", "Symfony", "NodeJS", "HTML5", "CSS3", "JavaScript", "JQuery", "MySQL", "Git con Bitbucket", "RabbitMQ"],
+				"tech" => ["PHP 7", "Vagrant", "Symfony", "NodeJS", "Python", "HTML5", "CSS3", "JavaScript", "JQuery", "MySQL", "Git con Bitbucket", "RabbitMQ"],
 				"more_info" => ""
 			],
 			[
@@ -138,6 +139,8 @@
 				[ "name" => "Angular", "image" => "angular.png"],
 				[ "name" => "Node JS", "image" => "nodejs.png"],
 				[ "name" => "npm", "image" => "npm.png"],
+			
+			[ "name" => "Python", "image" => "python.png"],
 
 			[ "name" => "HTML5", "image" => "html5.png"],
 			[ "name" => "CSS3", "image" => "css3.png"],
@@ -148,6 +151,7 @@
 			[ "name" => "MySQL", "image" => "mysql.png"],
 			[ "name" => "SQLServer", "image" => "sqlserver.png"],
 			[ "name" => "MongoDB", "image" => "mongodb.png"],
+			[ "name" => "Redis", "image" => "redis.png"],
 
 			[ "name" => "GitHub", "image" => "github.png"],
 			[ "name" => "Bitbucket", "image" => "bitbucket.png"],

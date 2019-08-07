@@ -2,6 +2,7 @@
 	<div>
 		<!-- Timeline based on https://bootsnipp.com/snippets/featured/timeline-responsive -->
 		<link rel="stylesheet" type="text/css" href="./src/assets/css/timeline.css">
+		<link rel="stylesheet" type="text/css" href="./src/assets/css/grid.css">
 		<navigationbar></navigationbar>
 			
 		<button class="btn btn-warning rounded-circle" onclick="goTopAction()" id="goTopButton" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
@@ -20,38 +21,6 @@
 	</div>
 </template>
 
-<style type="text/css">
-	body{
-		font-family: 'Open Sans', sans-serif !important;
-	}
-	h2, h3{
-		font-family: 'Montserrat', sans-serif !important;
-	}
-	h2{
-		text-decoration: underline
-	}
-
-	/* width */
-	::-webkit-scrollbar {
-	  width: 3px;
-	}
-
-	/* Track */
-	::-webkit-scrollbar-track {
-	  background: #f1f1f1; 
-	}
-	 
-	/* Handle */
-	::-webkit-scrollbar-thumb {
-	  background: #888; 
-	}
-
-	/* Handle on hover */
-	::-webkit-scrollbar-thumb:hover {
-	  background: #555; 
-	}
-
-</style>
 <script>
 	import NavBar from "./components/NavBar.vue"
 
@@ -63,7 +32,6 @@
 
 		data () {
 			return {
-				msg: 'Welcome to Your Vue.js App'
 			}
 		}
 	}

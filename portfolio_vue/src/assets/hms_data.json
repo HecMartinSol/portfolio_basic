@@ -7,7 +7,7 @@
         "cv": "./resources/cv_hector_martin_solis.pdf",
         "linkedin": "https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/",
         "github": "https://github.com/HecMartinSol",
-        "description": "Apasionado de las nuevas tecnologías\nMe gusta estar en constante aprendizaje y entender cómo dar mejor solución a los problemas\n"
+        "description": "Apasionado de las nuevas tecnologías\nMe gusta estar en constante aprendizaje y entender cómo dar mejor solución a los problemas\nInteresado en "
     },
     "studies": [
         {
@@ -28,12 +28,13 @@
             "company": "Internet República",
             "company_link": "https://internetrepublica.com/",
             "title": "Desarrollador Web Full Stack",
-            "info": " Migración de la plataforma https://socialpubli.com/ a un sistema de microservicios con Symfony\n\n\t\t\t\t\t\t\tExtracción de información de Redes Sociales utilizando scrapping con NodeJS\n\n\t\t\t\t\t\t\tImplantación de un sistema de colas con RabbitMQ para gestión de procesos backend\n\n\t\t\t\t\t\t\t",
+            "info": " Migración de la plataforma https://socialpubli.com/ a un sistema de microservicios con Symfony\n\n\t\t\t\t\t\t\tExtracción de información de Redes Sociales utilizando scrapping con NodeJS\n\n\t\t\t\t\t\t\tImplantación de un sistema de colas con RabbitMQ para gestión de procesos backend\n\n\t\t\t\t\t\t\tDesarrollo servicios de APIs en NodeJS con Express y en Python con Flask\n\n\t\t\t\t\t\t\t",
             "tech": [
                 "PHP 7",
                 "Vagrant",
                 "Symfony",
                 "NodeJS",
+                "Python",
                 "HTML5",
                 "CSS3",
                 "JavaScript",
@@ -171,6 +172,10 @@
             "image": "npm.png"
         },
         {
+            "name": "Python",
+            "image": "python.png"
+        },
+        {
             "name": "HTML5",
             "image": "html5.png"
         },
@@ -201,6 +206,10 @@
         {
             "name": "MongoDB",
             "image": "mongodb.png"
+        },
+        {
+            "name": "Redis",
+            "image": "redis.png"
         },
         {
             "name": "GitHub",

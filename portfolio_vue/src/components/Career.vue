@@ -1,6 +1,6 @@
 <template>
 	<div class="container-fluid bg-dark full_page_container">
-		<h2 class="pb-5 text-white"><center>Trayectoria profesional</center></h2>
+		<h2 class="pb-5"><center>Trayectoria profesional</center></h2>
 
 		<ul class="timeline">
 
