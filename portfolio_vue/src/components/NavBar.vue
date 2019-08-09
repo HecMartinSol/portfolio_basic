@@ -3,7 +3,7 @@
 		<nav id="topNav" class="navbar fixed-to navbar-expand-md navbar-dark bg-dark">
 			<!-- <a class="navbar-brand mx-auto" href="/">NavBar</a> -->
 			<a class="navbar-brand" href="/">
-				<img src="../assets/img/icon.png" class="img-fluid rounded-circle" alt="Logo" id="nav_bar_logo">
+				<img src="../assets/img/logopen_fill.png" class="img-fluid rounded-circle" alt="Logo" id="nav_bar_logo">
 				
 				<span class="ml-1"></span>
 			</a>
