@@ -170,7 +170,7 @@
 	# $info = str_replace("\t", "", $info);
 	# $info = str_replace("\r\t", "", $info);
 
-	$assetsPath = "./portfolio_vue/src/assets";
+	$assetsPath = "./src/assets";
 	if (!file_exists($assetsPath)) 
 		mkdir($assetsPath, 0777, true);
 
