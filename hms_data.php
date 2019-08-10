@@ -9,7 +9,11 @@
 			"cv" => "./resources/cv_hector_martin_solis.pdf",
 			"linkedin" => "https://www.linkedin.com/in/h%C3%A9ctor-mart%C3%ADn-sol%C3%ADs-64543b119/",
 			"github" => "https://github.com/HecMartinSol",
-			"description" => "Apasionado de las nuevas tecnologías\nMe gusta estar en constante aprendizaje y entender cómo dar mejor solución a los problemas\nInteresado en "
+			"description" => "¡Hola! Soy Héctor y me dedico al desarrollo de aplicaciones web.\n
+			Más allá de 'programar' me gusta 'buscar soluciones a problemas' que surgen dentro del proceso de desarrollo de software.\n
+			Me considero una persona curiosa y más allá de 'saber cosas' me gusta entenderlas.\n 
+			Desde siempre me ha apasionado la tecnología y procuro estar siempre estar en constante aprendizaje y entender cómo dar mejor solución a los problemas.\n
+			También otras de mis pasiones son viajar y... ¡las zapatillas!"
 		],
 		"studies" => [
 			[
