@@ -3,6 +3,7 @@ import About from "./components/About.vue";
 import Career from "./components/Career.vue";
 import Tech from "./components/Tech.vue";
 import Contact from "./components/Contact.vue";
+import PageNotFoundComponent from "./components/PageNotFoundComponent.vue";
 /**
 import InfoUsuarioComponent from "./components/InfoUsuario.vue";
 
@@ -34,5 +35,5 @@ export const rutas = [
 	// redirecciones
 	{path : '/users', 	redirect : {name:"usuarios"}},
 	*/
-	{path : '*', 	redirect : "/"}, // ruta por defecto (404)
+	{ path: '*', component: PageNotFoundComponent}, // ruta por defecto (404)
 ];
