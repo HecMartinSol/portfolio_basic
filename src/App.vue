@@ -5,19 +5,14 @@
 		<link rel="stylesheet" type="text/css" href="./src/assets/css/grid.css">
 		<navigationbar></navigationbar>
 			
-		<button class="btn btn-warning rounded-circle" onclick="goTopAction()" id="goTopButton" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
 		<router-view></router-view>
+
+		<button class="btn btn-warning rounded-circle" @click="goTopAction()" id="goTopButton" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
 
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-		<!--
-		<div class="container-fluid bg-light text-gray-dark pt-3">
-			<center>
-				<p>2019 © Copyright: Héctor Martín Solís</p>
-			</center>
-		</div>
-		-->
+
 	</div>
 </template>
 
@@ -33,6 +28,23 @@
 		data () {
 			return {
 			}
+		},
+		methods : {
+			goTopAction(){
+				$("html, body").stop().animate({scrollTop:0}, 500, 'swing');
+			}
+		},
+		mounted(){
+			$(document).scroll(function() {
+				var y = $(this).scrollTop();
+				
+				if (y > 100) {
+					jQuery('#goTopButton').fadeIn();
+				} else {
+					jQuery('#goTopButton').fadeOut();
+				}
+
+			});
 		}
 	}
 </script>

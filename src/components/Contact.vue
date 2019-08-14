@@ -3,7 +3,7 @@
 		<h2 class="pb-3"><center>Contacto</center></h2>
 		
 		<div class="buttons">
-			<a class="buttonCv" href='./assets/cv_hector_martin_solis.pdf' id="btn_my_cv" download title="Descargar Currículum">
+			<a class="buttonCv" href='src/assets/cv_hector_martin_solis.pdf' id="btn_my_cv" download title="Descargar Currículum">
 				<i class="fas fa-file-alt"></i>&nbsp;Currículum
 			</a>
 
